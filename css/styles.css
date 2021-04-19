@@ -17,11 +17,12 @@
 
 *{
     box-sizing: border-box;
+    margin: 0;
 }
 body{
-    margin: 0;
     font-size: 16px;
     font-family: "Rubik", sans-serif;
+    background: hsl(270, 20%, 80%);
 }
 
 .container{
@@ -42,6 +43,7 @@ body{
     background: linear-gradient(var(--light-magenta), var(--light-violet));
     
     transform: translateX(-5vw);
+    z-index: 0;
 }
 
 .main{
