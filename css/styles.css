@@ -15,19 +15,37 @@
 --very-light-magenta: hsl(289, 100%, 72); /* radio button outline*/
 }
 
+*{
+    box-sizing: border-box;
+}
 body{
     margin: 0;
     font-size: 16px;
     font-family: "Rubik", sans-serif;
-    box-sizing: border-box;
+}
+
+.container{
     display: flex;
-    flex-direction: column;
+        
 }
 
 .background{
-    height: 80vh;
-    width: 30vw;
-    border: 1px solid black;
-    border-radius: 100px / 50%;
-    background: black;
+    --height: 80vh;
+    --width: 30vw;
+    height: var(--height);
+    width: var(--width);
+    
+    display: flex;
+    flex-shrink: 0;
+    
+    border-radius: 0 0 calc(var(--height)/2) calc(var(--height)/2);
+    background: linear-gradient(var(--light-magenta), var(--light-violet));
+    
+    transform: translateX(-5vw);
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    
 }
