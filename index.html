@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
   <link rel="stylesheet" href="css/styles.css">
   
   <title>Frontend Mentor | [Challenge Name Here]</title>
@@ -15,27 +15,37 @@
   <div class="container"> 
 
   <div class="background"></div>
-    <div class="phone">   
-      Samuel Green
-      Available to Walk
-    
-      That sounds great. I’d be happy with that.
-    
-      Could you send over some pictures of your dog, please?
-    
-      Here are a few pictures. She’s a happy girl!
-    
-      Can you make it?
-    
-      She looks so happy! The time we discussed works. How long shall I take her out for?
-    
-      30 minute walk
-      $29
-    
-      1 hour walk
-      $49
-    
-      Type a message…
+    <div class="phone">
+
+      <div class="structure"></div>
+
+      <div class="gui-top">
+        <p id="name">Samuel Green</p>
+        <p id="status">Available to Walk</p>
+      </div>
+
+      <div class="gui-bottom">
+        <p>Type a message…</p>
+      </div>
+
+      <div class="text-other box">
+        <p>That sounds great. I’d be happy with that.</p>
+        <p>Could you send over some pictures of your dog, please?</p>
+        <p> She looks so happy! The time we discussed works. How long shall I take her out for?</p>
+      </div>   
+
+      <div class="text-user box">
+        <p>Here are a few pictures. She’s a happy girl!</p>
+        <p>Can you make it?</p>
+      </div>
+
+      <div class="choice box">
+        <p>30 minute walk<span>$29</span></p>
+        <p>1 hour walk<span>$49</span></p>
+      </div>
+
+      <div class="picture-box"></div>
+
     </div>
 
     <div class="main">    
@@ -47,8 +57,6 @@
       </p>
 
     </div>
-
-
   </div>
 </body>
 </html>
