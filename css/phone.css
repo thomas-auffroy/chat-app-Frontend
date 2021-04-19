@@ -1,5 +1,50 @@
 /* ALED */
 
 .phone{
-    height: 100px;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    height: 100vh;
+    width: 310px;
+    
+    justify-content: center;
+        
+    /*margin: 0px 0px 0px -120px;*/
+    z-index: 1;
+}
+
+.structure{
+    display: flex;
+    flex-direction: column;
+    height: 550px;
+    border: 0.9em white solid;
+    border-radius: 3em;
+
+}
+
+
+.gui-top{
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to left, var(--light-magenta), var(--light-violet));
+    border-radius: 2.1em 2.1em 0.3em 0.3em; 
+    
+    height: 70px;
+}
+.gui-top .speaker-hole{
+    display: flex;
+    height: 90px;
+    width: 160px;
+    background: white;
+    border-radius: 12px / 50%; 
+    transform: translate(calc((310px - 2*0.9em - 160px)/2), -13px);
+
+}
+
+
+
+@media only screen and (max-height: 550px){
+    .phone{
+        height: 550px;
+    }
 }
