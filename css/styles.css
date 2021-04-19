@@ -1,16 +1,8 @@
-.attribution { 
-    font-size: 11px; 
-    text-align: center; 
-}
-.attribution a { 
-    color: hsl(228, 45%, 44%); 
-}
-
 :root{
 --pale-violet: hsl(276, 100%, 81%); /*sub-heading at the top of the app UI*/
 --moderate-violet: hsl(276, 55%, 52%); /*chat on the left*/
 --desaturated-dark-violet: hsl(271, 15%, 43%); /*chat on the right*/
---grayish-blue: hsl(206, 6%, 79%);/*placeholder text*/
+--grayish-blue: hsl(206, 6%, 79%); /*placeholder text*/
 --very-dark-desaturated-violet: hsl(271, 36%, 24%); /*main heading*/
 --dark-grayish-violet: hsl(270, 7%, 64%); /*paragraph*/
 
@@ -19,11 +11,23 @@
 
 --white: hsl(0,0%,100%);
 --light-grayish-violet: hsl(270, 20%, 96%); /* app background*/
---very-dark-desaturated-violet: hsl(271, 36%, 24%); /* submit button background*/
+--very-dark-desaturated-violet-background: hsl(271, 36%, 24%); /* submit button background*/
 --very-light-magenta: hsl(289, 100%, 72); /* radio button outline*/
 }
 
 body{
+    margin: 0;
     font-size: 16px;
     font-family: "Rubik", sans-serif;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.background{
+    height: 80vh;
+    width: 30vw;
+    border: 1px solid black;
+    border-radius: 100px / 50%;
+    background: black;
 }
