@@ -221,14 +221,15 @@
 
 
 
-@media only screen and (max-height: 550px){
+@media only screen and (max-height: 580px){
     .phone{
-        height: 550px;
+        height: 580px;
+        
     }
 }
 @media only screen and (max-width: 1305px){
     .phone{
-        margin: auto auto;
+        margin: 0 auto;
     }
 
 }
