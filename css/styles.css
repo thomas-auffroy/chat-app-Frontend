@@ -74,6 +74,7 @@ body{
     
     height: 156px;
     width: 444px;
+    margin-top: 1.5em;
 }
 
 
@@ -103,12 +104,6 @@ body{
         height: auto;
         width: auto;
     }
-    .text{
-        margin-top: -20px;
-    }
-    
-    
-    
     
     .background:nth-child(1){
         --height: 600px;
