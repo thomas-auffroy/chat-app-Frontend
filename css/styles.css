@@ -24,6 +24,7 @@ body{
     font-size: 16px;
     font-family: "Rubik", sans-serif;
     background: white;
+
 }
 
 .container{
@@ -33,11 +34,10 @@ body{
 }
 
 .background:nth-child(1){
-    --height: 100vh;
+    --height: 700px;
     --width: 600px;
     height: var(--height);
     width: var(--width);
-    margin-top: -100px;
     
     position: absolute;
        
@@ -48,14 +48,13 @@ body{
     z-index:0;
 }
 .background:nth-child(2)    {
-    --height: 100vh;
+    --height: 730px;
     --width: 600px;
     height: var(--height);
     width: var(--width);
-    margin-top: 100px;
     
     position: absolute;
-    transform: translateX(1320px);
+    transform: translate(1256px, 70px);
     
     border-radius: calc(var(--height)/2) calc(var(--height)/2) 0 0;
     background: var(--light-grayish-violet);
@@ -67,17 +66,66 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 10vw;   
+    margin-left: 135px;   
     line-height: 1.6em;
-    padding-right: 310px;
     transform: translateY(-10px);
 }
+.main .text{
+    
+    height: 156px;
+    width: 444px;
+}
+
 
 .main h1{
     color: var(--very-dark-desaturated-violet);
-    margin: 0.7em 0;
+    padding-bottom: 0.7em;
     font-size: 2.5em;
 }
 .main p{
     color: var(--dark-grayish-violet);
+}
+
+@media only screen and (max-width: 1305px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 3em;
+    }
+    .main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0em 2em;
+        text-align: center;
+    }
+    .main .text{
+        height: auto;
+        width: auto;
+    }
+    .text{
+        margin-top: -20px;
+    }
+    
+    
+    
+    
+    .background:nth-child(1){
+        --height: 600px;
+        --width: 375px;
+        height: var(--height);
+        width: var(--width);
+
+        position: absolute;
+
+        border-radius: 0 0 calc(var(--height)/2) calc(var(--height)/4);
+        background: linear-gradient(to bottom, var(--light-magenta), var(--light-violet) 50%);
+
+        transform: translateX(calc(-375px/2));
+        z-index:0;
+    }
+    .background:nth-child(2){
+        visibility: hidden;
+    }
+
 }
