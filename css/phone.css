@@ -20,7 +20,6 @@
     border: 0.9em white solid;
     border-radius: 3em;
 }
-
 .gui-top{
     display: flex;
     flex-direction: row;
@@ -30,6 +29,37 @@
     
     height: 80px;    
 }
+.user-zone{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background: var(--light-grayish-violet);
+    height: calc(550px - 80px - 0.9em);
+    border-radius: 0 0 2.1em 2.1em;
+}
+
+.user-zone p{
+    max-width: 163px;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 10px;
+}
+.user-zone .left p{ 
+
+    float: left;
+    color: var(--moderate-violet);
+    background: hsl(270, 20%, 90%); /* app background modify*/
+    border-radius: 12px 12px 12px 3px;
+}
+.user-zone .right p{ 
+    float: right;
+    color: var(--desaturated-dark-violet);
+    background: var(--white);
+    border-radius: 12px 12px 3px 12px;
+ 
+}
+
+
 
 .gui-top .speaker-hole{
     position: absolute;
@@ -44,7 +74,7 @@
     position: absolute;
     height: 2em;
     width: 2em;
-    border: 1px white solid;
+    border: 2px white solid;
     border-radius: 50%;
     background-image: url("../images/avatar.jpg");
     background-size: cover;
@@ -89,13 +119,13 @@
 
 .gui-top #name{
     position: absolute;
-    transform: translate(-20px, 31px);
+    transform: translate(-22px, 29px);
     color: var(--white);
-
+    font-size: 15px;
 }
 .gui-top #status{
     position: absolute;
-    transform: translate(-33px, 49px);
+    transform: translate(-32px, 49px);
     font-size: 10px;
     color: var(--pale-violet);
 }
