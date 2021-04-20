@@ -8,8 +8,7 @@
     width: 310px;
     
     justify-content: center;
-        
-    /*margin: 0px 0px 0px -120px;*/
+
     z-index: 1;
 }
 
@@ -37,21 +36,70 @@
     height: calc(550px - 80px - 0.9em);
     border-radius: 0 0 2.1em 2.1em;
 }
-
 .user-zone p{
-    max-width: 163px;
     margin-bottom: 10px;
     padding: 10px;
     font-size: 10px;
 }
-.user-zone .left p{ 
+.user-zone .text-box p{
+    max-width: 163px;
+}
+.user-zone .choice-box {
+    display: flex;
+    flex-direction: column;
+    width: 190px;
+}
+.user-zone .choice-box p{
+    color: var(--white);
+    padding: 10px 13px 7px 35px;
+    background: linear-gradient(to right, var(--light-magenta), var(--light-violet)); 
+}
+.user-zone .choice-box p:before{
+    content: "";
+    position: absolute;
+    height: 1.2em;
+    width: 1.3em;
+    border: 1px solid var(--very-light-magenta);
+    border-radius: 50%;
+    transform: translate(-25px, -1px);
+}
+.user-zone .choice-box span{
+    float: right;
+    font-size: 13px;    
+    font-weight: 700;
+    padding: 0 0 0 0;
+    transform: translateY(-1px);
+}
 
+.user-zone .picture-box span{
+    float: right;
+    --size: 45px;
+    height: var(--size);
+    width: var(--size);
+    margin: 5px 5px 10px 6px;
+    border-radius: 10px;
+    background-size: cover;
+}
+.user-zone .picture-box span:nth-child(1){
+    background-image: url("../images/dog-image-3.jpg");
+}
+.user-zone .picture-box span:nth-child(2){
+    background-image: url("../images/dog-image-2.jpg");
+}
+.user-zone .picture-box span:nth-child(3){
+    background-image: url("../images/dog-image-1.jpg");
+}
+
+.user-zone .left p{
+    border-radius: 12px 12px 12px 3px;
+}
+
+.user-zone .left.text-box p{ 
     float: left;
     color: var(--moderate-violet);
     background: hsl(270, 20%, 90%); /* app background modify*/
-    border-radius: 12px 12px 12px 3px;
 }
-.user-zone .right p{ 
+.user-zone .right.text-box p{ 
     float: right;
     color: var(--desaturated-dark-violet);
     background: var(--white);
