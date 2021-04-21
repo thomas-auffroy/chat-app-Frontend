@@ -1,14 +1,13 @@
-/* ALED v1*/
+/* ALED v2*/
 
 .phone{
     display: flex;
     flex-direction: column;
     flex-shrink: 0;
-    height: 100vh;
+    height: calc(100vh - 3em);
     width: 270px;
     
-    margin-left: 30.5%;
-    margin-bottom: 1.5em;
+    margin: 1.5em 0 1.5em 30.5%;
     justify-content: center;
 
     z-index: 1;
@@ -223,7 +222,7 @@
 
 
 
-    @media only screen and (max-height: 580px){
+@media only screen and (max-height: 580px){
     .phone{
         height: 580px;
         
