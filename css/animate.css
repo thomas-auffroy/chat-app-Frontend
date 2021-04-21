@@ -1,0 +1,32 @@
+@keyframes fade-phone{
+    from{opacity: 0%;}
+    to{opacity: 100%;}
+}
+
+@keyframes progressive-user-phone{
+    0%{visibility: hidden}
+    99%{visibility: hidden}
+    100%{visibility: visible;}
+}
+
+
+.phone{
+    animation: fade-phone 1s linear;
+}
+
+.user-zone .left:nth-of-type(1){
+    animation: progressive-user-phone 1.5s linear;
+}
+.user-zone .picture-box span{
+    animation: progressive-user-phone 3.5s linear;
+    --offsetY: 40px;
+}
+.user-zone .right p{
+    animation: progressive-user-phone 4.5s linear;
+}
+.user-zone .left:nth-of-type(4){
+    animation: progressive-user-phone 6.5s linear;
+}
+.user-zone .left:nth-of-type(5){
+    animation: progressive-user-phone 8s linear;
+}
