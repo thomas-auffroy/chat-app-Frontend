@@ -57,6 +57,8 @@
     border-radius: 40px / 40px;
     margin-top: 5px;
 }
+
+
 .user-zone .gui-bottom p{
     margin: 0;
     padding-left: 3em;
@@ -90,6 +92,10 @@
     flex-direction: column;
     width: 190px;
 }
+
+.user-zone .choice-box p:hover:before{
+    background: var(--very-light-magenta);
+}
 .user-zone .choice-box p{
     color: var(--white);
     padding: 10px 13px 7px 35px;
@@ -110,6 +116,11 @@
     font-weight: 700;
     padding: 0 0 0 0;
     transform: translateY(-1px);
+}
+
+.user-zone .picture-box span:hover{
+    transition: scale 500ms;
+    scale: 3;
 }
 
 .user-zone .picture-box span{
