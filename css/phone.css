@@ -122,6 +122,10 @@
     transition: scale 500ms;
     scale: 3;
 }
+.user-zone .picture-box span:active{
+    transition: scale 500ms;
+    scale: 3;
+}
 
 .user-zone .picture-box span{
     float: right;
