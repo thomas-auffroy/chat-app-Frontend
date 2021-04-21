@@ -2,31 +2,70 @@
     from{opacity: 0%;}
     to{opacity: 100%;}
 }
-
-@keyframes progressive-user-phone{
-    0%{visibility: hidden}
-    99%{visibility: hidden}
-    100%{visibility: visible;}
+@keyframes user-phone{
+    from{visibility: hidden; /* Useless, just to understand what this function do*/}
+    to{visibility: visible;}
 }
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
 
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
 
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
 .phone{
-    animation: fade-phone 1s linear;
+    animation: fade-phone 0.5s linear 0s;
+}
+.user-zone .left, .user-zone .right, .user-zone .picture-box{
+    visibility: hidden;
 }
 
-.user-zone .left:nth-of-type(1){
-    animation: progressive-user-phone 1.5s linear;
+.user-zone .left:nth-of-type(1) p:nth-child(1){
+    animation-name: user-phone, shake;
+    animation-duration: 1s,1s;
+    animation-delay: 3s, 3s;
+    animation-timing-function: linear, cubic-bezier(.36,.07,.19,.97);
+    animation-fill-mode: forwards;
 }
+.user-zone .left:nth-of-type(1) p:nth-child(2){
+    animation-name: user-phone, shake;
+    animation-duration: 1s,1s;
+    animation-delay: 4s, 4s;
+    animation-timing-function: linear, cubic-bezier(.36,.07,.19,.97);
+    animation-fill-mode: forwards;
+}
+
 .user-zone .picture-box span{
-    animation: progressive-user-phone 3.5s linear;
-    --offsetY: 40px;
+    animation: user-phone 1s linear 6s forwards;
 }
-.user-zone .right p{
-    animation: progressive-user-phone 4.5s linear;
+
+.user-zone .right p:nth-child(1){
+    animation: user-phone 1s linear 7.5s forwards;
 }
+.user-zone .right p:nth-child(2){
+    animation: user-phone 1s linear 8s forwards;
+}
+
 .user-zone .left:nth-of-type(4){
-    animation: progressive-user-phone 6.5s linear;
+    animation-name: user-phone, shake;
+    animation-duration: 1s,1s;
+    animation-delay: 10s, 10s;
+    animation-timing-function: linear, cubic-bezier(.36,.07,.19,.97);
+    animation-fill-mode: forwards;
 }
-.user-zone .left:nth-of-type(5){
-    animation: progressive-user-phone 8s linear;
+.user-zone .left:nth-of-type(5) p:nth-child(1){
+    animation: user-phone 1s linear 12s forwards;
+}
+.user-zone .left:nth-of-type(5) p:nth-child(2){
+    animation: user-phone 1s linear 12s forwards;
 }
