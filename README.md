@@ -13,10 +13,6 @@ This is a solution to the [Chat app CSS illustration challenge on Frontend Mento
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -29,10 +25,10 @@ Users should be able to:
 
 ### Screenshot
 
-![](images/screenshot-desktop.png) Desktop version
+![Desktop version](images/screenshot-desktop.png)
 ![](images/screenshot-mobile.png) Mobile version
 
-- Live Site URL: [GitHub page](https://thomas-auffroy.github.io/chat-app-Frontend/)
+Live Site URL: [GitHub page](https://thomas-auffroy.github.io/chat-app-Frontend/)
 
 ## My process
 
@@ -41,7 +37,6 @@ Users should be able to:
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-
 
 ### What I learned
 
@@ -53,4 +48,4 @@ Just keep practicing, and maybe learn Js
 
 ### Useful resources
 
-- [mozilla docs](https://developer.mozilla.org/en-US/docs/Web/CSS) - When I need to google something, I try to look for at this website, it seems complete to me.
+[mozilla docs](https://developer.mozilla.org/en-US/docs/Web/CSS) - When I need to google something, I try to look for at this website, it seems complete to me.
