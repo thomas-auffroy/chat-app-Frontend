@@ -25,8 +25,8 @@ Users should be able to:
 
 ### Screenshot
 
-![Desktop version](images/screenshot-desktop.png)
-![](images/screenshot-mobile.png) Mobile version
+![](images/screenshot-desktop.png)
+![](images/screenshot-mobile.png)
 
 Live Site URL: [GitHub page](https://thomas-auffroy.github.io/chat-app-Frontend/)
 
